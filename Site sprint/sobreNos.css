@@ -1,0 +1,23 @@
+/** @format */
+
+
+.sobrenos {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 80px auto;
+}
+
+.sobreConteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.sobreConteudo p {
+  width: 650px;
+  margin-right: 90px;
+  font-size: 1.5em;
+  line-height: 1.5;
+}

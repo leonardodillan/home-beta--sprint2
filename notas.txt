@@ -1,0 +1,7 @@
+- Falta estilizar o input da mensagem do email, de modo que aja uma quebra de texto enquanto o usuário escreve o e-mail; E que texto comece mais na parte de cima do input, e nao no meio
+(DEU PREGUIÇA)...,,
+- Definir a questão do fundo (cor || imagem || gradiente || arte na color como falei no audioooo)
+- LOGO
+- Geometria do site não ficou perfeita, de modo que a primeira div esta correta, mas a terceira (fale conosco-email), conforme a idealização planejada..
+
+OBS: Lembrando que até o momento só fiz a home, mas estou enviando todos os arquivos do bglh ae

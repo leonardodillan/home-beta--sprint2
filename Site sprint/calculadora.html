@@ -1,0 +1,112 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="calculadora.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="containerHeader">
+      <header class="cabecalho">
+        <div class="containerCabecalho">
+          <h1 class="logo"><img src="img/logoMenu.svg" alt="" /></h1>
+          <nav class="menu">
+            <ul>
+              <li><a href="Home.html">Início</a></li>
+              <li>
+                <a class="ativo" href="Calculadora.html">Calculadora</a>
+              </li>
+              <li><a href="Beneficios.html">Benefícios</a></li>
+              <li><a href="Contato.html">Contato</a></li>
+
+              <li><a href="Login.html">Login</a></li>
+              <li><a href="Cadastro.html">Cadastro</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <div class="calculadora" id="scrollCalculadora">
+      <div class="subtitulo">
+        <h2 class="textoSubtitulo">Simulador Financeiro</h2>
+        <div class="divisor branco"></div>
+      </div>
+      <div class="calculadoraConteudo">
+        <div class="form">
+          <label for="">Informe a quantidade de sacas: </label>
+          <input type="text" id="inputSacas" placeholder="R$" />
+          <label for="">Gasto mensal com água: </label>
+          <input type="text" id="inputAgua" placeholder="R$" />
+          <button onclick="btnCalcular()">Calcular</button>
+          <span>Preço por saca: <b>R$ 195,00</b></span>
+        </div>
+        <div class="resultados">
+          <h3>Resultados</h3>
+          <hr />
+          <p>Perdas devido a problemas de temperatura e umidade</p>
+          <span class="textoResultado"
+            ><b>Perdas:</b> <span id="rstPerda">-</span></span
+          >
+          <hr />
+          <p>Com o nosso serviço é esperado um lucro de 20%</p>
+          <span class="textoResultado"
+            ><b>Lucro:</b> <span id="rstLucro">-</span></span
+          >
+          <hr />
+          <p>É esperado que o gasto com água também diminua</p>
+          <span class="textoResultado"
+            ><b>Água:</b> <span id="rstAgua">-</span></span
+          >
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="containerFooter">
+        <nav class="menuFooter">
+          <ul>
+            <li><a href="Home.html">Início</a></li>
+            <li><a href="Calculadora.html">Calculadora</a></li>
+            <li><a href="Beneficios.html">Benefícios</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="redes">
+          <div class="redesSub">Redes Sociais</div>
+          <div class="imgRedes">
+            <img src="img/logoFace.svg" alt="" />
+            <img src="img/logoTwitter.svg" alt="" />
+            <img src="img/logoInsta.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function btnCalcular() {
+        var sacas = inputSacas.value;
+        var agua = inputAgua.value;
+
+        var valorPerda = sacas * 0.75 * 195;
+        var valorLucro = sacas * 0.2 * 195;
+        var valorAgua = agua * 0.3;
+
+        rstPerda.innerHTML = `R$ ${valorPerda.toFixed(2)}`;
+        rstLucro.innerHTML = `R$ ${valorLucro.toFixed(2)}`;
+        rstAgua.innerHTML = `- R$ ${valorAgua.toFixed(2)}`;
+        rstPerda.style.fontSize = "24px";
+        rstPerda.style.color = "red";
+
+        rstLucro.style.fontSize = "24px";
+        rstLucro.style.color = "green";
+
+        rstAgua.style.fontSize = "24px";
+        rstAgua.style.color = "blue";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+/** @format */
+
+.contato {
+  background-image: url("");
+  background-size: cover;
+  padding: 50px 0 100px;
+  display: flex;
+  border-radius: 6px;
+}
+
+.contatoConteudo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7%;
+  margin-top: 50px;
+}
+
+.containerContato h2 {
+  color: #fff;
+}
+
+.containerContato {
+  margin: 0 auto;
+}
+
+.formContato {
+  display: flex;
+  flex-flow: column;
+  width: 90%;
+  padding: 25px;
+  border: 3px solid #000;
+  background-image: url("img/wood.jpg");
+  background-size: cover;
+  box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+
+.formContato label {
+  margin-bottom: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.formContato input {
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 2px solid #000;
+  background-color: rgba(171, 106, 71, 0.8);
+  color: #fff;
+}
+
+.formContato textarea {
+  margin-bottom: 25px;
+  border: 2px solid #000;
+  background-color: rgba(171, 106, 71, 0.8);
+  color: #fff;
+  padding: 8px 10px;
+  resize: none;
+  border-radius: 6px;
+}
+
+.formContato button {
+  width: 100px;
+  padding: 10px;
+  background-color: #b77b45;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.outrosContatos {
+  background-color: #fff;
+  border: 3px solid #000;
+  padding: 25px;
+  background-image: url("img/wood.jpg");
+  background-size: cover;
+  box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  color: #fff;
+}
+
+.outrosContatos h3 {
+  font-size: 24px;
+}
+
+.outrosContatos .divisor {
+  height: 3px;
+  background-color: #fff;
+  width: 100%;
+  margin: 10px 0 20px;
+}
+
+.infos div {
+  margin-top: 40px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.infos div span {
+  margin-left: 20px;
+}
+
+.btncontato {
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.ipt {
+  border-radius: 6px;
+}
